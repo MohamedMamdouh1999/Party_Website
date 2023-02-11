@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.5)), url(../IMGS/events\ heavenly\ header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (min-width:300px) {
+    .landing h1 {
+        font-size: 60px;
+    }
+}
+nav > a {
+    top: 35%;
+}
+.offcanvas-start {
+    background-color: black;
+}
+.offcanvas-start li {
+    margin: 50px 0;
+}
+.offcanvas-start a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+footer,
+.accordion-header button {
+    background-color: rgba(214,46,51,0.6);
+    color: white;
+}
+.accordion-body {
+    background-color: rgb(204,204,204);
+}
+section:nth-of-type(2) {
+    width: 100%;
+    background-image: linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.5)), url(../IMGS/invitation.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section:nth-of-type(3) h2,
+section:nth-of-type(3) h5 {
+    color: #444;
+    font-weight: bolder;
+}
+section:nth-of-type(3) p,
+section:nth-of-type(3) li,
+section:nth-of-type(3) .icons i {
+    color: #777;
+}
+section:nth-of-type(3) li i {
+    margin-right: 10px;
+}
+section:nth-of-type(3) form div span:first-of-type,
+section:nth-of-type(3) li:nth-of-type(2) a {
+    color: #d62e33;
+}
+section:nth-of-type(3) .icons > div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #777;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: background-color .4s, border .4s;
+}
+section:nth-of-type(3) .icons > div:hover i {
+    color: white;
+}
+section:nth-of-type(3) .icons > div:hover {
+    border: none;
+}
+section:nth-of-type(3) .icons > div:nth-of-type(1):hover {
+    background-color: #1877f2;
+}
+section:nth-of-type(3) .icons > div:nth-of-type(2):hover {
+    background-color: #1da1f2;
+}
+section:nth-of-type(3) .icons > div:nth-of-type(3):hover {
+    background-color: #fd1d1d;
+}
+section:nth-of-type(3) .icons > div:nth-of-type(4):hover {
+    background-color: #444;
+}
+section:nth-of-type(3) .icons > div:nth-of-type(5):hover {
+    background-color: #e60023;
+}
+@media screen and (max-width:180px) {
+    section:nth-of-type(3) .icons > div {
+        margin-bottom: 4px;
+    }
+}
